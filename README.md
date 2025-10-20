@@ -1,6 +1,6 @@
 # Azure-Data-Engineering-Project
 
-End-to-end *ETL Data Pipeline* built on *Microsoft Azure, covering **data ingestion, **transformation, and **serving layers, with **Power BI* connection for validation.
+End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data ingestion**, **transformation**, and **serving layers**, with **Power BI** connection for validation.
 
 ---
 
