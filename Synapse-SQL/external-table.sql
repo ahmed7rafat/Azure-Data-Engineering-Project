@@ -41,5 +41,84 @@ as
 select * from gold.sales;
 
 
+-----------------------------------------------------
+----create external table extcustomers
+-----------------------------------------------------
+create external table gold.extcustomers
+WITH
+(
 
-SELECT* from gold.extsales
+    LOCATION = 'extcustomers',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.customers;
+-----------------------------------------------------
+----create external table extproducts
+-----------------------------------------------------
+create external table gold.extproducts
+WITH
+(
+
+    LOCATION = 'extproducts',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.products;
+-----------------------------------------------------
+----create external table extreturns
+-----------------------------------------------------
+create external table gold.extreturns
+WITH
+(
+
+    LOCATION = 'extreturns',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.returns;
+-----------------------------------------------------
+----create external table extsubcat
+-----------------------------------------------------
+create external table gold.extsubcat
+WITH
+(
+
+    LOCATION = 'extsubcat',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.subcat;
+-----------------------------------------------------
+----create external table extterritories
+-----------------------------------------------------
+create external table gold.extterritories
+WITH
+(
+
+    LOCATION = 'extterritories',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.territories;
+
+-----------------------------------------------------
+----create external table ext_Calendar
+-----------------------------------------------------
+create external table gold.ext_calendar
+WITH
+(
+
+    LOCATION = 'ext_calendar',
+    data_source = source_gold,
+    file_format = format_parquet
+)
+as
+select * from gold.calendar;
+--------------------------------------------------
+
