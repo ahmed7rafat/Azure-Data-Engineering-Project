@@ -24,25 +24,6 @@ FROM silver.calendar;
 GO
 
 
-------------------------------------------------------------
---  Create Dimension: Subcategory
-------------------------------------------------------------
-
-CREATE EXTERNAL TABLE gold.dim_subcategory
-WITH
-(
-    LOCATION = 'dim_subcategory/',
-    DATA_SOURCE = source_gold,
-    FILE_FORMAT = format_parquet
-)
-AS
-SELECT DISTINCT
-    ProductSubcategoryKey,
-    ProductCategoryKey,
-    SubcategoryName
-FROM silver.subcategories
-GO
-
 
 ------------------------------------------------------------
 --  Create Dimension: Product
@@ -173,7 +154,6 @@ GO
 --  Validation Checks
 ------------------------------------------------------------
 SELECT COUNT(*) AS dim_date_count FROM gold.dim_date;
-SELECT COUNT(*) AS dim_subcategory_count FROM gold.dim_subcategory;
 SELECT COUNT(*) AS dim_product_count FROM gold.dim_product;
 SELECT COUNT(*) AS dim_customer_count FROM gold.dim_customer;
 SELECT COUNT(*) AS dim_territory_count FROM gold.dim_territory;
