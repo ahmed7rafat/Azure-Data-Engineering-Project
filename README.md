@@ -6,6 +6,7 @@ End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data i
 
 ## 🧩 Project Overview
 -This project demonstrates a complete ETL workflow using:
+
 Azure Data Factory (ADF) → Data ingestion from an external HTTP source into Azure Data Lake Gen2 (Bronze Layer).
 
 Azure Databricks (PySpark) → Data cleaning, transformation, and aggregation to create curated datasets (Silver Layer).
