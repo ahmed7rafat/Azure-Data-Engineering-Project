@@ -1,6 +1,6 @@
 # Azure-Data-Engineering-Project
 
-End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data ingestion**, **transformation**, and **serving layers**,modeled using a Star Schema within the Medallion Architecture (Bronze, Silver, Gold) framework.
+End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data ingestion**, **transformation**, and **serving layers**,modeled using a Star Schema within the Medallion Architecture (Bronze, Silver, Gold).
 
 ---
 
@@ -13,7 +13,7 @@ Azure Databricks (PySpark) → Data cleaning, transformation, and aggregation to
 
 Azure Synapse Analytics → Modeled a Star Schema with fact and dimension tables for optimized querying and reporting (Gold Layer).
 
-Power BI → Connected to Synapse for data validation and model inspection (no dashboard yet).
+Power BI → Built two fully interactive dashboards using the curated Gold Layer data: dashboard-1 –> Sales Overview /dashboard-2 –> Product Performance.
 
 ---
 
@@ -34,5 +34,8 @@ Azure-Data-Engineering-Project/
 │   ├── silver.sql
 │   └── gold.sql
 ├── JSON-Git-Parameters/git.json
+├── Powerbi/
+│   ├── dashboard-1.pbix
+│   └── dashboard-2.pbix
 └── README.md
 ```
