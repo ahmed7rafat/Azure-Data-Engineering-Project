@@ -13,7 +13,8 @@ Azure Databricks (PySpark) → Data cleaning, transformation, and aggregation to
 
 Azure Synapse Analytics → Modeled a Star Schema with fact and dimension tables for optimized querying and reporting (Gold Layer).
 
-Power BI → Built two fully interactive dashboards using the curated Gold Layer data: dashboard-1 –> Sales Overview /dashboard-2 –> Product Performance.
+Power BI → Built three interactive dashboards: Sales Overview, Product Performance, and Customer Insights.
+(A calculated column (Income Bracket) was created in the customer dimension to classify customers into Low, Mid, and High income groups)
 
 ---
 
@@ -35,7 +36,8 @@ Azure-Data-Engineering-Project/
 │   └── gold.sql
 ├── JSON-Git-Parameters/git.json
 ├── Powerbi/
-│   ├── dashboard-1.pbix
-│   └── dashboard-2.pbix
+│   ├── Sales_Overview.png
+│   ├── Product_Performance.png
+│   └── Customer_Insights.png
 └── README.md
 ```
