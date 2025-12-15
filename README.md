@@ -1,6 +1,6 @@
 # Azure-Data-Engineering-Project
 
-End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data ingestion**, **transformation**, and **serving layers**,modeled using a Star Schema within the Medallion Architecture (Bronze, Silver, Gold), with interactive reporting and analytics delivered through **Power BI dashboards**.
+End-to-end **ETL Data Pipeline** built on **Microsoft Azure**, covering **data ingestion**, **transformation**, and **serving layers**, modeled using a Star Schema within the Medallion Architecture (Bronze, Silver, Gold), with interactive reporting and analytics delivered through **Power BI dashboards**.
 
 ---
 
